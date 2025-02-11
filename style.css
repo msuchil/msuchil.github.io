@@ -19,14 +19,14 @@ nav{
 
 /* positions tab links in a row */
 .nav-links{
-    flex: 1;
-    text-align: right;
+    flex: 1;                                /* occupies all the space in the row */
+    text-align: center;                      /* text will be on the right side */
 }
 
 /* link tab spacing */
 .nav-links ul li{
-    list-style: none;
-    display: inline-block;
+    list-style: none;                       /* no bullet points */
+    display: inline-block;                  /* horizontal */
     padding: 8px 15px;
     position: relative;
 }
