@@ -50,6 +50,6 @@ nav{
 }
 
 /* when hovering over, line appears */
-.nav-links ul li::after{
+.nav-links ul li:hover::after{
     width: 100%;
 }
