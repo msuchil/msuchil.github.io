@@ -31,8 +31,25 @@ nav{
     position: relative;
 }
 
+/* a = anchor tag */
 .nav-links ul li a{
     color: #000;
     text-decoration: none;
     font-size: 15px;
+}
+
+/* add a line under each tab link */
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/* when hovering over, line appears */
+.nav-links ul li::after{
+    width: 100%;
 }
