@@ -26,6 +26,23 @@ header{
     top: 0;
     z-index: 10;
 }
+
+/* LOGO */
+header .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8em;
+    color: #fcc6e3;  /* Cute pink accent color */
+}
+
+header nav a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #333333;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+
 nav{
     display: flex;
     padding: 3.5% 6%;
@@ -54,6 +71,21 @@ nav{
     font-size: 15px;
 }
 
+/*add a line under each tab*/
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/*when hovering over, line appears*/
+.nav-links ul li:hover::after{
+    width: 100%;
+}
 
 
 /************* ABOUT ME ************/
