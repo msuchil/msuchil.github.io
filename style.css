@@ -3,72 +3,13 @@
     padding: 0;
 }
 
-/*
-.header{
-    min-height: 100vh;
-    width: 100% ;
-    /*background-image: url(images/beige.png);
-    background-color: #ffffff;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-} 
-*/
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
 /* LOGO */
-header .logo {
+.logo {
     font-family: 'Pacifico', cursive;
     font-size: 1.8em;
     color: #fcc6e3;  /* Cute pink accent color */
-}
+    text-align: center;
 
-header nav a {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: #333333;
-    text-decoration: none;
-    margin-left: 30px;
-    transition: color 0.3s ease;
-}
-
-nav{
-    display: flex;
-    padding: 3.5% 6%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* positions tab links in a row */
-.nav-links{
-    flex: 1;                                /* occupies all the space in the row */
-    text-align: center;                      /* text will be on the right side */
-}
-
-/* link tab spacing */
-.nav-links ul li{
-    list-style: none;                       /* no bullet points */
-    display: inline-block;                  /* horizontal */
-    padding: 8px 15px;
-    position: relative;
-}
-
-/* a = anchor tag */
-.nav-links ul li a{
-    color: #000;
-    text-decoration: none;
-    font-size: 15px;
 }
 
 /*add a line under each tab*/
@@ -82,10 +23,14 @@ nav{
     transition: 0.5s;
 }
 
-/*when hovering over, line appears*/
+/* when hovering over, line appears */
 .nav-links ul li:hover::after{
     width: 100%;
 }
+
+
+
+
 
 
 /************* ABOUT ME ************/

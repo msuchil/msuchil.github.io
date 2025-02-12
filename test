@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Website Header with Logo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a>HOME</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li class="logo"><a>LOGO</a></li>
+                <li><a href="#">GAMING</a></li>
+                <li><a href="#">BUCKETLIST</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<style>
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the header */
+header {
+    background-color: #fef0e0;
+    padding: 10px 0;
+}
+
+/* Styling for the navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+/* Style for each navigation link */
+nav li {
+    margin: 0 20px;
+}
+
+/* Style for the logo link */
+nav .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f998d0;
+    text-decoration: none;
+}
+
+/* Style for the navigation links */
+nav a {
+    font-size: 18px;
+    color: #0f0e0e;
+    text-decoration: none;
+}
+
+/* Hover effect for the links */
+nav a:hover {
+    color: #fbcee9;
+}
+
+</style>
+</body>
+</html>
