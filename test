@@ -1,72 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title>Website Header with Logo</title>
-    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-
     <header>
-        <nav>
-            <ul>
-                <li><a>HOME</a></li>
-                <li><a href="#">PROJECTS</a></li>
-                <li class="logo"><a>LOGO</a></li>
-                <li><a href="#">GAMING</a></li>
-                <li><a href="#">BUCKETLIST</a></li>
-            </ul>
-        </nav>
+        <div class="left-links">
+            <a>HOME</a>
+            <a href="#">PROJECTS</a>
+        </div>
+
+        <div class="logo">
+            <img src="your-logo.png" alt="Logo"> <!-- replace with your actual logo file -->
+        </div>
+
+        <div class="right-links">
+            <a href="#">GAMING</a>
+            <a href="#">BUCKETLIST</a>
+        </div>
     </header>
+    <style>
+        header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        background-color: #fff7ea; /* background color for the header */
+        }
 
-<style>
-/* Reset some basic styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        .left-links, .right-links {
+            display: flex;
+        }
 
-/* Style for the header */
-header {
-    background-color: #fef0e0;
-    padding: 10px 0;
-}
+        .left-links a, .right-links a {
+            color: rgb(41, 38, 38);
+            text-decoration: none;
+            margin: 0 35px;
+            font-size: 15px;
+            font-weight: bold;
+        }
 
-/* Styling for the navigation */
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-}
+        .left-links a::after, .right-links a::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #000;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
 
-/* Style for each navigation link */
-nav li {
-    margin: 0 20px;
-}
+        .left-links a:hover::after, .right-links a:hover::after{
+        width: 100%;
+        }
 
-/* Style for the logo link */
-nav .logo a {
-    font-size: 24px;
-    font-weight: bold;
-    color: #f998d0;
-    text-decoration: none;
-}
+        .logo img {
+            height: 50px; /* adjust the height of your logo */
+        }
 
-/* Style for the navigation links */
-nav a {
-    font-size: 18px;
-    color: #0f0e0e;
-    text-decoration: none;
-}
+    </style>
 
-/* Hover effect for the links */
-nav a:hover {
-    color: #fbcee9;
-}
-
-</style>
 </body>
 </html>
