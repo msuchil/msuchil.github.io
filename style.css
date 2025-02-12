@@ -86,3 +86,24 @@ img{
     padding-left: 13%;
     margin-right: 50px;
 }
+
+/******** FOOTER ********/
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fcc8d182;
+    height: auto;
+    width: 99vw;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #000000;
+}
+
+.foot-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
