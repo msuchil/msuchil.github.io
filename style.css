@@ -21,7 +21,7 @@ nav{
 /* positions tab links in a row */
 .nav-links{
     flex: 1;                                /* occupies all the space in the row */
-    text-align: center;                      /* text will be on the right side */
+    text-align: right;                      /* text will be on the right side */
 }
 
 /* link tab spacing */
