@@ -53,3 +53,28 @@ nav{
 .nav-links ul li:hover::after{
     width: 100%;
 }
+
+/************* ABOUT ME ************/
+
+/* Edits the about-me section */
+.about-me{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff9f5;
+    background-size: 1522px 842px;
+}
+
+/* Edits the heading */
+.about-me h1{
+    font-size: 55px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Edits the paragraph */
+.txt{
+    font-size: 21px;
+    padding-right: 10%;
+    padding-top: 7%;
+}
