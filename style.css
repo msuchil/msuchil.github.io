@@ -2,14 +2,29 @@
     margin: 0;
     padding: 0;
 }
+
+/*
 .header{
     min-height: 100vh;
     width: 100% ;
-    /*background-image: url(images/beige.png);*/
+    /*background-image: url(images/beige.png);
     background-color: #ffffff;
     background-position: center;
     background-size: cover;
     position: relative;
+} 
+*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 nav{
     display: flex;
@@ -39,21 +54,7 @@ nav{
     font-size: 15px;
 }
 
-/* add a line under each tab link */
-.nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #000;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
 
-/* when hovering over, line appears */
-.nav-links ul li:hover::after{
-    width: 100%;
-}
 
 /************* ABOUT ME ************/
 
