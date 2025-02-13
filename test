@@ -6,45 +6,60 @@
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title>Website Header with Logo</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <div class="left-links">
-            <a>HOME</a>
-            <a href="#">PROJECTS</a>
-        </div>
-
-        <div class="logo">
-            <img src="your-logo.png" alt="Logo"> <!-- replace with your actual logo file -->
-        </div>
-
-        <div class="right-links">
-            <a href="#">GAMING</a>
-            <a href="#">BUCKETLIST</a>
-        </div>
+        <img class="logo" src="" alt="logo">
+        <nav>
+            <ul class="navlinks">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">GAMING</a></li>
+                <li><a href="#">BUCKETLIST</a></li>
+            </ul>
+        </nav>
     </header>
     <style>
-        header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 40px;
-        background-color: #fff7ea; /* background color for the header */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* background color for the header */
         }
 
-        .left-links, .right-links {
-            display: flex;
-        }
-
-        .left-links a, .right-links a {
-            color: rgb(41, 38, 38);
+        li, a {
+            font-family: "Delius", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #000;
             text-decoration: none;
-            margin: 0 35px;
-            font-size: 15px;
-            font-weight: bold;
         }
 
-        .left-links a::after, .right-links a::after {
+        header{
+            display: flex;
+            justify-content: space-between; /* push left and right items to far edges & item in the middle is going to evenly  space the two */
+            align-items: center; /* takes everything in header and aligns it to center */
+            padding: 30px 10%;
+        }
+
+        .logo{
+            cursor: pointer;
+        }
+
+        .navlinks {
+            list-style: none;
+        }
+
+        .navlinks li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .navlinks a::after, .navlinks a::after {
             content: '';
             width: 0%;
             height: 2px;
@@ -54,12 +69,8 @@
             transition: 0.5s;
         }
 
-        .left-links a:hover::after, .right-links a:hover::after{
+        .navlinks a:hover::after, .navlinks a:hover::after{
         width: 100%;
-        }
-
-        .logo img {
-            height: 50px; /* adjust the height of your logo */
         }
 
     </style>
