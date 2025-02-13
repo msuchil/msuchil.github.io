@@ -1,47 +1,36 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #fff;
 }
 
 /*add background image*/
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40;
-    background-color: #fcc5;
-}
-
-/* space for tab links */
-nav{
-    display: flex;
-    padding: 4% 6%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* creates the row for the tabs*/
-.nav-links{
-    flex: 1;
-    text-align: center;
-}
-
-/*spacing between the link tab names*/
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 15px;
-    position: relative;
-}
-
-.nav-links ul li a{
+li, a {
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
     color: #000;
     text-decoration: none;
-    font-size: 15px;
 }
 
-/*add a line under each tab*/
-.nav-links ul li::after{
+.header{
+    display: flex;
+    justify-content: space-between; /* push left and right items to far edges & item in the middle is going to evenly  space the two */
+    align-items: center; /* takes everything in header and aligns it to center */
+    padding: 30px 10%;
+}
+
+.navlinks {
+    list-style: none;
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks a::after, .navlinks a::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -51,20 +40,11 @@ nav{
     transition: 0.5s;
 }
 
-/*when hovering over, line appears*/
-.nav-links ul li:hover::after{
-    width: 100%;
+.navlinks a:hover::after, .navlinks a:hover::after{
+width: 100%;
 }
 
-/* LOGO */
-.logo {
-    font-family: 'Pacifico', cursive;
-    font-size: 1.8em;
-    color: #fcc6e3;  /* Cute pink accent color */
-    text-align: center;
-    padding: 8px 30px;
-    position: relative;
-}
+
 
 
 
