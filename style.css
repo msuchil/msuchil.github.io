@@ -3,13 +3,41 @@
     padding: 0;
 }
 
-/* LOGO */
-.logo {
-    font-family: 'Pacifico', cursive;
-    font-size: 1.8em;
-    color: #fcc6e3;  /* Cute pink accent color */
-    text-align: center;
+/*add background image*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40;
+    background-color: #fcc5;
+}
 
+/* space for tab links */
+nav{
+    display: flex;
+    padding: 4% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* creates the row for the tabs*/
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+/*spacing between the link tab names*/
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
 }
 
 /*add a line under each tab*/
@@ -23,9 +51,19 @@
     transition: 0.5s;
 }
 
-/* when hovering over, line appears */
+/*when hovering over, line appears*/
 .nav-links ul li:hover::after{
     width: 100%;
+}
+
+/* LOGO */
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8em;
+    color: #fcc6e3;  /* Cute pink accent color */
+    text-align: center;
+    padding: 8px 30px;
+    position: relative;
 }
 
 
