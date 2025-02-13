@@ -10,15 +10,23 @@ li, a {
     font-family: "Delius", serif;
     font-weight: 400;
     font-style: normal;
-    color: #000;
+    color:#dd7a9b;
     text-decoration: none;
 }
 
-.header{
+header{
     display: flex;
-    justify-content: space-between; /* push left and right items to far edges & item in the middle is going to evenly  space the two */
+    justify-content: flex-end; /* push left everythingto the right */
     align-items: center; /* takes everything in header and aligns it to center */
-    padding: 30px 10%;
+    padding: 30px 8%;
+}
+
+h1{
+    margin-right: auto;
+    font-family: "Fleur De Leah", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #dd7a9b;
 }
 
 .navlinks {
