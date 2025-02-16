@@ -2,8 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    scroll-behavior: smooth;
 }
+
 
 /*add background image*/
 li, a {
@@ -42,7 +43,7 @@ h1{
     content: '';
     width: 0%;
     height: 2px;
-    background: #000;
+    background: #fff;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -52,9 +53,44 @@ h1{
 width: 100%;
 }
 
+/****** GAMING ******/
+.gaming{
+    background-image: url(images/♡︎.png);
+}
+/*
+.gaming-header{
+    background-color: black;
+}*/
+.gaming-navlinks {
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #ffb7f3,
+                0 0 0.8rem #ffb7f3,
+                0 0 2.8rem #ffb7f3,
+                inset 0 0 1.3rem #ffb7f3;
+}
 
+.gaming-navlinks {
+    list-style: none;
+}
 
+.gaming-navlinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
 
+.gaming-navlinks a::after, .gaming-navlinks a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffb7f3;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
 
 
 
@@ -93,6 +129,7 @@ img{
 }
 
 /******** FOOTER ********/
+/*
 footer{
     bottom: 0;
     left: 0;
@@ -111,4 +148,4 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-}
+} */
