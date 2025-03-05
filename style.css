@@ -66,8 +66,8 @@ iframe{
 
 /************* ABOUT ME ************/
 
-/* Edits the about-me section */
-.about-3D{
+/* Edits the about-3D section */
+.about-balloon{
     width: 100%;
     min-height: 100vh;
     background-color: #ffffff;
@@ -75,7 +75,7 @@ iframe{
 }
 
 /* Edits the heading */
-.about-3D h1{
+.about-balloon h1{
     font-size: 55px;
     font-family: "Delius", serif;
     text-align: center;
@@ -89,6 +89,8 @@ iframe{
     padding-right: 10%;
     padding-top: 7%;
 }
+
+
 
 /****** GAMING ******/
 .gaming{
